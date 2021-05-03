@@ -1,0 +1,80 @@
+html {
+    font-family: "Times New Roman";
+    overflow-x: hidden;
+}
+
+h1{
+    text-align: center;
+    padding: 20px;
+    margin-top: 10px;
+}
+
+nav {
+    display: block;
+    margin-bottom: 20px;
+    height: 20px;
+    min-width: 1500px;
+    background-color: #b2b5aa;
+}
+
+.linknav{
+    margin-left: 60px;
+    color: white;
+}
+
+main{
+    display: inline-flex;
+    vertical-align: top;
+}
+
+.leftblock{
+    width: 200px;
+    overflow: hidden;
+    padding: 20px;
+    background-color: #b2b5aa;
+}
+
+.linkparagraph{
+    margin-bottom: 1ex;
+    padding: 1ex;
+    list-style: none;
+    border-bottom: 1px solid white;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+h2{
+    font-size: 18px;
+    margin-top: 30px;
+    width: 100%;
+    border-bottom: 1px solid black;
+}
+
+article{
+    text-align: center;
+    margin-left: 10vw;
+    margin: 60px;
+}
+
+.paragraph {
+    display: auto;
+    text-align: left;
+    white-space: pre;
+}
+
+footer{
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: hidden;
+    justify-content: center;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.footertext{
+    margin-top: 40px;
+    font-weight: bold;
+}
