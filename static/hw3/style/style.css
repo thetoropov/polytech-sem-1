@@ -1,0 +1,61 @@
+.text1{
+    font-size: 25px;
+    font-family: "Comic Sans MS";
+    font-weight: bold;
+    color: saddlebrown;
+    position: relative;
+    top: 160px;
+    left: 35px;
+    visibility: hidden;
+    text-shadow: 2px 2px 4px black;
+}
+
+.text2{
+    font-size: 25px;
+    color: saddlebrown;
+    font-family: "Comic Sans MS";
+    font-weight: bold;
+    position: relative;
+    top: -20px;
+    left: 40px;
+    visibility: hidden;
+}
+
+.block{
+    height: 100%;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.chest{
+    height: 220px;
+    width: 220px;
+    background-image: url("../imgs/chest1.jpg");
+    background-size: 200px 200px;
+    background-repeat: no-repeat;
+    background-position: 10px 25px;
+}
+
+.chest:hover{
+    background-image: url("../imgs/coin.png"), url("../imgs/chest2.jpg");
+    background-size: 50px 50px, 200px 200px;
+    background-position: 75px 65px, 10px 25px;
+}
+
+.chest:hover .text1{
+    visibility: visible;
+}
+
+.chest:active{
+    background-image: url("../imgs/chest1.jpg");
+    background-size: 200px 200px;
+    background-position: 10px 25px;
+}
+
+.chest:active .text1{
+    visibility: hidden;
+}
+
+.chest:active .text2{
+    visibility: visible;
+}
