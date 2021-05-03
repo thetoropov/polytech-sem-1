@@ -13,5 +13,10 @@ def hw1():
     return render_template('hw1.html')
 
 
+@app.route('/hw2')
+def hw2():
+    return render_template('hw2.html')
+
+
 if __name__ == '__main__':
     app.run()

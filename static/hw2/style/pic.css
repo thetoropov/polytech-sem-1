@@ -1,0 +1,127 @@
+.snake{
+    position: fixed;
+    top:50px;
+    left:50px;
+    height: 500px;
+    width: 500px;
+}
+
+.circle1{
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background: radial-gradient(circle farthest-corner at 75px 40px, white, green);
+}
+
+.circle2{
+    position: absolute;
+    top: 50px;
+    left: 60px;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background: radial-gradient(circle farthest-corner at 75px 40px, white, green);
+}
+
+.circle3{
+    position: absolute;
+    bottom: 15px;
+    left: 75px;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background: radial-gradient(circle farthest-corner at 75px 40px, white, green);
+}
+
+.circle4{
+    position: absolute;
+    top: 15px;
+    left: 75px;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background: radial-gradient(circle farthest-corner at 75px 40px, white, green);
+}
+
+.eye1{
+    position: absolute;
+    top: 30px;
+    left: 25px;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    border: 3px solid black;
+
+}
+
+.eye2{
+    position: absolute;
+    top: 30px;
+    left: 60px;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    border: 3px solid black;
+
+}
+
+.mouth{
+    position: absolute;
+    top: 60px;
+    left: 40px;
+    height: 10px;
+    width: 10px;
+    clip-path: inset(50% 0 0 0);
+    border-radius: 0 0 50% 50%;
+    border: 3px solid black;
+
+}
+
+.leg1{
+    position: absolute;
+    top: 125px;
+    left: 80px;
+    border-width: 30px 30px 20px;
+    border-style: solid;
+    border-color: saddlebrown saddlebrown transparent;
+}
+
+.leg2{
+    transform: rotate(10deg);
+    position: absolute;
+    top: 55px;
+    left: 95px;
+    border-width: 30px 30px 20px;
+    border-style: solid;
+    border-color: saddlebrown saddlebrown transparent;
+}
+
+.leg3{
+    transform: rotate(-10deg);
+    position: absolute;
+    top: 85px;
+    left: 105px;
+    border-width: 30px 30px 20px;
+    border-style: solid;
+    border-color: saddlebrown saddlebrown transparent;
+}
+
+.horn1{
+    position: absolute;
+    top: -10px;
+    width: 10px;
+    height: 50px;
+    transform: rotate(-30deg);
+    background: black;
+}
+
+.horn2{
+    position: absolute;
+    top: -10px;
+    left: 95px;
+    width: 10px;
+    height: 50px;
+    transform: rotate(30deg);
+    background: black;
+}
