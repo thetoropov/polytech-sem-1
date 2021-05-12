@@ -1,0 +1,80 @@
+body{
+    font: 18px "Times New Roman";
+    background: #f0f0f0;
+}
+
+.container{
+    width: 1000px;
+    min-height: 100%;
+    margin: auto;
+    background: #ffffff;
+    padding-bottom: 10px;
+}
+
+header{
+    padding-top: 10px;
+    margin-top: 10px;
+    background: #ffffff;
+    border-bottom: 1px solid black;
+}
+
+aside {
+    margin-top: 10px;
+    width: 300px;
+    padding: 0 10px;
+    float: left;
+}
+
+.content{
+    margin-left: 330px;
+    padding: 10px;
+    background: #ffffff;
+}
+
+footer{
+    padding: 5px;
+    clear: left;
+
+}
+
+button{
+
+}
+
+#create{
+
+}
+
+#change{
+
+}
+
+#rand{
+
+}
+
+table{
+    border-collapse: collapse;
+}
+
+td, th {
+    padding: 3px;
+    border: 1px solid black;
+}
+
+th {
+    background: #ffffff;
+}
+
+p{
+    margin: 0;
+    padding: 0;
+}
+
+.class1{
+    background-color: blueviolet;
+}
+
+.class2{
+    background-color: indianred;
+}
