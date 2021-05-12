@@ -30,14 +30,14 @@
 .chest{
     height: 220px;
     width: 220px;
-    background-image: url("../imgs/chest1.jpg");
+    background-image: url("../img/chest1.jpg");
     background-size: 200px 200px;
     background-repeat: no-repeat;
     background-position: 10px 25px;
 }
 
 .chest:hover{
-    background-image: url("../imgs/coin.png"), url("../imgs/chest2.jpg");
+    background-image: url("../img/coin.png"), url("../img/chest2.jpg");
     background-size: 50px 50px, 200px 200px;
     background-position: 75px 65px, 10px 25px;
 }
@@ -47,7 +47,7 @@
 }
 
 .chest:active{
-    background-image: url("../imgs/chest1.jpg");
+    background-image: url("../img/chest1.jpg");
     background-size: 200px 200px;
     background-position: 10px 25px;
 }

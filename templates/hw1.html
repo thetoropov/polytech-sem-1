@@ -1,43 +1,41 @@
 <!DOCTYPE html>
-
 <html lang="eng">
+<head>
+    <meta charset="UTF-8">
+    <link href="../static/hw1/style/style.css" rel="stylesheet">
+    <title>Geralt of Rivia</title>
+</head>
 
-    <head>
-        <meta charset="UTF-8">
-        <link href="../static/hw1/style/style.css" rel="stylesheet">
-        <title>Geralt of Rivia</title>
-    </head>
-    
-    <body>
-        <header>
-            <center>
-                <img src="../static/hw1/imgs/logo.png" alt="logo" width="100" height="100" align="bottom"/>
-                <h1>Geralt of Rivia</h1>
-                <p>+7 (123) 456-78-90</p>
-            </center>
-            <nav>
-                <div>
-                    <li class="linknav">
-                        <a href="{{ url_for('hw1') }}#end">To the end</a>
-                    </li>
-                </div>
-            </nav>
-        </header>
-
-        <main>
-            <aside class="leftblock">
-                <li class="linkparagraph"><a href="{{ url_for('hw1') }}#link1">About me</a></li>
-                <li class="linkparagraph"><a href="{{ url_for('hw1') }}#link2">Personality</a></li>
-                <li class="linkparagraph"><a href="{{ url_for('hw1') }}#link3">Legacy</a></li>
-                <li class="linkparagraph"><a href="{{ url_for('hw1') }}#link4">The Witcher</a></li>
-            </aside>
+<body>
+    <header>
+        <div style="text-align: center;">
+            <img src="../static/hw1/img/logo.png" alt="logo" width="100" height="100" align="bottom"/>
+            <h1>Geralt of Rivia</h1>
+            <p>+7 (123) 456-78-90</p>
+        </div>
+        <nav>
             <div>
-                <article>
-                    <a name="link1"></a>
-                    <h2>
-                        About me
-                    </h2>
-                    <p class="paragraph">Geralt of Rivia was a legendary witcher of the School of the Wolf active
+                <li class="linknav">
+                    <a href="{{ url_for('hw1') }}#end">To the end</a>
+                </li>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <aside class="leftblock">
+            <li class="linkparagraph"><a href="{{ url_for('hw1') }}#link1">About me</a></li>
+            <li class="linkparagraph"><a href="{{ url_for('hw1') }}#link2">Personality</a></li>
+            <li class="linkparagraph"><a href="{{ url_for('hw1') }}#link3">Legacy</a></li>
+            <li class="linkparagraph"><a href="{{ url_for('hw1') }}#link4">The Witcher</a></li>
+        </aside>
+        <div>
+            <article>
+                <a name="link1"></a>
+                <h2>
+                    About me
+                </h2>
+                <p class="paragraph">Geralt of Rivia was a legendary witcher of the School of the Wolf active
 throughout the 13th century. He loved the sorceress Yennefer, considered
 the love of his life despite their tumultuous relationship, and became Ciri's
 adoptive father.
@@ -60,14 +58,15 @@ went so far as to adopt a Rivian accent to appear more authentic. Later,
 Queen Meve of Lyria knighted him for his valor in the Battle for the Bridge
 on the Yaruga conferring on him the formal title "of Rivia", which amused
 him. He, therefore, became a true knight.
-                    </p>
-                </article>
-                <article>
-                    <a name="link2"></a>
-                    <h2>
-                        Personality
-                    </h2>
-                    <p class="paragraph">Most of the time, he could be apathetic, cynical, and threatening.
+                </p>
+            </article>
+
+            <article>
+                <a name="link2"></a>
+                <h2>
+                    Personality
+                </h2>
+                <p class="paragraph">Most of the time, he could be apathetic, cynical, and threatening.
 Despite his outwardly cold nature, Dandelion noted that behind his exterior
 was hiding a fiercely loyal friend, and a man of good humour and as someone
 not indifferent to suffering. Geralt had many good friends all over the
@@ -87,15 +86,15 @@ kill only him.
 Geralt frequently showed remorse and had revelations in his life. Other times
 he had complete emotional breakdowns, even giving up being a witcher in general
 and dropping his morals at one point.
-                    </p>
-                </article>
+                </p>
+            </article>
 
-                <article>
-                    <a name="link3"></a>
-                    <h2>
-                        Legacy
-                    </h2>
-                    <p class="paragraph">The story of Geralt and Ciri became a popular saga many years, probably
+            <article>
+                <a name="link3"></a>
+                <h2>
+                    Legacy
+                </h2>
+                <p class="paragraph">The story of Geralt and Ciri became a popular saga many years, probably
 centuries, after the actual events had taken place. The chief sources of
 these stories were Dandelion's ballads and the bard's autobiography Half
 a Century of Poetry. However, Dandelion was not fond of telling the whole
@@ -107,15 +106,15 @@ considered canon from those that seemed non-canonical and embellished.
 Many years in the future, the sorceress Nimue verch Wledyr ap Gwyn and her
 assistant Condwiramurs Tilly conducted extensive research into the matter,
 in an attempt to determine what had really happened to Geralt and Ciri.
-                    </p>
-                </article>
+                </p>
+            </article>
 
-                <article>
-                    <a name="link4"></a>
-                    <h2>
-                        The Witcher
-                    </h2>
-                    <p class="paragraph">After seemingly having been killed by a mob during a pogrom of nonhumans
+            <article>
+                <a name="link4"></a>
+                <h2>
+                    The Witcher
+                </h2>
+                <p class="paragraph">After seemingly having been killed by a mob during a pogrom of nonhumans
 at the end of the Witcher saga, Geralt returns to life with no recollection
 of the details of his sudden reappearance or of the five intervening years.
 He is rescued by the last remaining witchers in the world and is taken back
@@ -132,15 +131,15 @@ a frightener in the main courtyard, have descended into the witchers'
 laboratory to procure the secrets they are in pursuit of. Vesemir offers
 Geralt the choice of either going after the mages with Triss, or staying
 to assist the other witchers in defeating the frightener.
-                    </p>
-                </article>
-            </div>
-        </main>
-    </body>
+                </p>
+            </article>
+        </div>
+    </main>
+</body>
 
-    <footer>
-        <a name="end"></a>
-        <div class="footertext">Bye bye</div>
-    </footer>
+<footer>
+    <a name="end"></a>
+    <div class="footertext">Bye bye</div>
+</footer>
 
 </html>

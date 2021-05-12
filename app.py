@@ -23,5 +23,15 @@ def hw3():
     return render_template('hw3.html')
 
 
+@app.route('/hw4')
+def hw4():
+    return render_template('hw4.html')
+
+
+@app.route('/hw5')
+def hw5():
+    return render_template('hw5.html')
+
+
 if __name__ == '__main__':
     app.run()
