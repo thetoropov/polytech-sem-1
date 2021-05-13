@@ -16,6 +16,7 @@ header{
     margin-top: 10px;
     background: #ffffff;
     border-bottom: 1px solid black;
+    text-align: center;
 }
 
 aside {
@@ -32,6 +33,7 @@ aside {
 }
 
 footer{
+    text-align: center;
     padding: 5px;
     clear: left;
 
