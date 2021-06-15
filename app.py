@@ -33,5 +33,10 @@ def hw5():
     return render_template('hw5.html')
 
 
+@app.route('/proj')
+def proj():
+    return render_template('proj.html')
+
+
 if __name__ == '__main__':
     app.run()

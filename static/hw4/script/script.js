@@ -88,6 +88,16 @@ changeButton.onclick = function () {
     if (changeCount > 0){
         return
     }
+
+    let aside = document.getElementById("aside");
+    let text = aside.textContent;
+    let re = /"\w*"/;
+    let list = text.split(re);
+
+    if (list.length < 7) {
+    return
+    }
+
     let table = document.getElementById("myTable");
     for (let i = 1; i < table.rows.length; i++) {
         if (i % 2 === 0){
@@ -110,10 +120,6 @@ changeButton.onclick = function () {
         }
     }
 
-    let aside = document.getElementById("aside");
-    let text = aside.textContent;
-    let re = /"\w*"/;
-    let list = text.split(re);
     aside.innerHTML = "<li class=\"class1\">"+list[0]+"\"<ul><li>\""+list[1]+"\"</li></ul></li><li class=\"class2\"><strong>\""+
         list[2]+"\"<ul></strong><li><strong>\""+list[3]+"\"</strong></li></ul></li><li class=\"class1\">\""+
         list[4]+"\"<ul><li>\""+list[5]+"\"</li></ul></li><li class=\"class2\"><strong>\""+
