@@ -1,9 +1,104 @@
+html {
+    font-family: "Times New Roman";
+    overflow-x: hidden;
+}
+
+header {
+    max-width: 100%;
+}
+
+h1{
+    text-align: center;
+    padding: 20px;
+    margin-top: 10px;
+}
+
+nav {
+    display: block;
+    margin-bottom: 20px;
+    height: 20px;
+    max-width: 100%;
+    background-color: #b2b5aa;
+}
+
+.linknav{
+    margin-left: 60px;
+    color: white;
+}
+
+main{
+    display: inline-flex;
+    vertical-align: top;
+    max-width: 100%;
+}
+
+.leftblock{
+    max-width: 33%;
+    width: 1500px;
+    overflow: auto;
+    padding: 20px;
+    background-color: #b2b5aa;
+}
+
+.linkparagraph{
+    margin-bottom: 1ex;
+    padding: 1ex;
+    list-style: none;
+    border-bottom: 1px solid white;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+h2{
+    /*font-size: 18px;*/
+    margin-top: 30px;
+    width: 100%;
+    border-bottom: 1px solid black;
+}
+
+article{
+    text-align: center;
+    margin: 60px;
+    max-width: 64%;
+}
+
+.paragraph {
+    display: auto;
+    text-align: left;
+    /*white-space: pre;*/
+}
+
+footer{
+    display: flex;
+    width: 100%;
+    flex-wrap: nowrap;
+    overflow: hidden;
+    justify-content: center;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.footertext{
+    margin-top: 40px;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 1000px) {
+
+  body {
+    overflow-x: scroll;
+  }
+}
+
 .snake{
-    position: fixed;
+    position: relative;
     top:50px;
     left:50px;
-    height: 500px;
-    width: 500px;
+    height: 250px;
+    width: 350px;
 }
 
 .circle1{
