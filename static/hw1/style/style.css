@@ -3,6 +3,10 @@ html {
     overflow-x: hidden;
 }
 
+header {
+    max-width: 100%;
+}
+
 h1{
     text-align: center;
     padding: 20px;
@@ -13,7 +17,7 @@ nav {
     display: block;
     margin-bottom: 20px;
     height: 20px;
-    min-width: 1500px;
+    max-width: 100%;
     background-color: #b2b5aa;
 }
 
@@ -25,11 +29,13 @@ nav {
 main{
     display: inline-flex;
     vertical-align: top;
+    max-width: 100%;
 }
 
 .leftblock{
-    width: 200px;
-    overflow: hidden;
+    max-width: 33%;
+    width: 1500px;
+    overflow: auto;
     padding: 20px;
     background-color: #b2b5aa;
 }
@@ -47,7 +53,7 @@ a {
 }
 
 h2{
-    font-size: 18px;
+    /*font-size: 18px;*/
     margin-top: 30px;
     width: 100%;
     border-bottom: 1px solid black;
@@ -55,18 +61,19 @@ h2{
 
 article{
     text-align: center;
-    margin-left: 10vw;
     margin: 60px;
+    max-width: 64%;
 }
 
 .paragraph {
     display: auto;
     text-align: left;
-    white-space: pre;
+    /*white-space: pre;*/
 }
 
 footer{
     display: flex;
+    width: 100%;
     flex-wrap: nowrap;
     overflow: hidden;
     justify-content: center;
@@ -77,4 +84,26 @@ footer{
 .footertext{
     margin-top: 40px;
     font-weight: bold;
+}
+
+@media screen and (max-width: 625px) {
+
+    .linkparagraph{
+        font-size: 7px;
+    }
+
+    .leftblock{
+        max-width: 33%;
+        overflow: hidden;
+        padding: 0px;
+        background-color: #b2b5aa;
+    }
+
+}
+
+@media screen and (max-width: 325px) {
+
+  body {
+    overflow-x: scroll;
+  }
 }
