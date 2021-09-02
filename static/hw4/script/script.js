@@ -12,7 +12,7 @@ let changeCount = 0;
 let createButton = document.getElementById("create");
 let changeButton = document.getElementById("change");
 
-function addTableRow() {
+function addTableRow(r_ind) {
     let table = document.getElementById("myTable"),
         rowsCount = table.rows.length,
         newRowNumber = rowsCount + 1,
@@ -29,30 +29,30 @@ function addTableRow() {
         newCell2.className = class2;
     }
 
-    newCell1.textContent = words[newRowNumber - 2];
-    newCell2.textContent = translations[newRowNumber - 2];
+    newCell1.textContent = words[r_ind];
+    newCell2.textContent = translations[r_ind];
 }
 
-function addTagText() {
+function addTagText(r_ind) {
     if (pCount > 3){
         return
     }
     let rand = document.getElementById("rand");
     let newP = document.createElement("p");
     if (pCount % 2 === 0){
-        newP.innerHTML = "<p class=" + class1 + " id=" + pCount + ">" + "<u>n=" + pCount + "</u> <em>" + words[pCount] +
-            "</em> " + translations[pCount] + "</p>";
+        newP.innerHTML = "<p class=" + class1 + " id=" + pCount + ">" + "<u>n=" + pCount + "</u> <em>" + words[r_ind] +
+            "</em> " + translations[r_ind] + "</p>";
     }
     else{
-        newP.innerHTML = "<p class=" + class2 + " id=" + pCount + ">" + "<u>n=" + pCount + "</u> <em>" + words[pCount] +
-            "</em> " + translations[pCount] + "</p>";
+        newP.innerHTML = "<p class=" + class2 + " id=" + pCount + ">" + "<u>n=" + pCount + "</u> <em>" + words[r_ind] +
+            "</em> " + translations[r_ind] + "</p>";
     }
     pCount += 1;
     rand.appendChild(newP);
 
 }
 
-function addAsideText() {
+function addAsideText(r_ind) {
     if (asideCount > 3){
         return
     }
@@ -66,7 +66,7 @@ function addAsideText() {
     }
 
     asideCount += 1;
-    newOl.innerHTML = words[asideCount-1] + "<ul><li>" + translations[asideCount-1] + "</li></ul>";
+    newOl.innerHTML = words[r_ind] + "<ul><li>" + translations[r_ind] + "</li></ul>";
     aside.appendChild(newOl);
 
 }
@@ -79,9 +79,15 @@ createButton.onclick = function () {
     if (words_cnt < 0){
         return
     }
-    addTableRow();
-    addTagText();
-    addAsideText();
+    let random_index = Math.floor(Math.random() * words.length);
+    while (typeof words[random_index] === 'undefined') {
+        random_index = Math.floor(Math.random() * words.length);
+    }
+    addTableRow(random_index);
+    addTagText(random_index);
+    addAsideText(random_index);
+    delete words[random_index];
+    delete translations[random_index];
 }
 
 changeButton.onclick = function () {
