@@ -32,12 +32,34 @@ restart.onclick = function () {
 };
 
 function checkBlock(i) {
-    if (Math.abs(wrap.item(i).offsetLeft - x[i]) < 50 && Math.abs(wrap.item(i).offsetTop - y[i]) < 50 && deg[i] % 360 === 0) {
-        wrap.item(i).style.left = x[i] + "px";
-        wrap.item(i).style.top = y[i] + "px";
-        block.item(i).style.border = 0;
-        return 1;
-    }
+        if (Math.abs(wrap.item(0).offsetLeft - wrap.item(2).offsetLeft ) < 50 &&
+            Math.abs(wrap.item(0).offsetTop - wrap.item(2).offsetTop) < 150 &&
+            deg[0] % 360 === 0 && deg[2] % 360 === 0 &&
+            Math.abs(wrap.item(0).offsetLeft - wrap.item(4).offsetLeft ) < 150 &&
+            Math.abs(wrap.item(0).offsetTop - wrap.item(4).offsetTop) < 50 &&
+            deg[4] % 360 === 0 &&
+            Math.abs(wrap.item(4).offsetLeft - wrap.item(3).offsetLeft ) < 50 &&
+            Math.abs(wrap.item(4).offsetTop - wrap.item(3).offsetTop) < 150 &&
+            deg[3] % 360 ===0 &&
+            Math.abs(wrap.item(4).offsetLeft - wrap.item(1).offsetLeft ) < 150 &&
+            Math.abs(wrap.item(4).offsetTop - wrap.item(1).offsetTop) < 50 &&
+            deg[1] % 360 === 0 &&
+            Math.abs(wrap.item(1).offsetLeft - wrap.item(5).offsetLeft ) < 50 &&
+            Math.abs(wrap.item(1).offsetTop - wrap.item(5).offsetTop) < 150 &&
+            deg[5] % 360 === 0 )
+            {
+            // wrap.item(i).style.left = x[i] + "px";
+            // wrap.item(i).style.top = y[i] + "px";
+            // block.item(i).style.border = 0;
+            return 1;
+        }
+
+    // if (Math.abs(wrap.item(i).offsetLeft - x[i]) < 50 && Math.abs(wrap.item(i).offsetTop - y[i]) < 50 && deg[i] % 360 === 0) {
+    //     wrap.item(i).style.left = x[i] + "px";
+    //     wrap.item(i).style.top = y[i] + "px";
+    //     block.item(i).style.border = 0;
+    //     return 1;
+    // }
     return 0;
 }
 
@@ -47,10 +69,14 @@ check.onclick = function () {
         checkedBlocks += checkBlock(i);
     }
     if (checkedBlocks === 6) {
+        let leftNumber = wrap.item(5).offsetLeft;
+        let topNumber = wrap.item(5).offsetTop;
         for (let i = 0; i < 6; i++) {
             wrap.item(i).style.left = -9999 + "px";
         }
-        animal.style.left = 630 + "px";
+
+        animal.style.left = leftNumber + "px";
+        animal.style.top = topNumber + "px";
         animal.animate([
             {transform: 'translate(0)'},
             {transform: 'translate(-5px, 0px)'},
@@ -70,6 +96,7 @@ function rotateBlock(i) {
 
 function movingBlock(i) {
     block.item(i).ondragstart = function () {
+            console.log(i);
         return false;
     };
 
