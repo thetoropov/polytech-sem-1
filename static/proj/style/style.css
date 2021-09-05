@@ -1,0 +1,185 @@
+html, body, div, span, h1, h2, a, img, strong, ul, li, button, footer, header {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	vertical-align: baseline;
+}
+
+img {
+	border: none;
+}
+
+header{
+    padding-top: 10px;
+    margin-top: 10px;
+    background: #ffffff;
+    border-bottom: 1px solid black;
+    text-align: center;
+}
+
+html, body, .wrap {
+	max-height: 100%;
+}
+
+.wrap {
+	width: 1024px;
+	margin: 0 auto;
+	padding: 20px;
+}
+
+.battlefield {
+	width: 860px;
+	/*height: 640px;*/
+	position: relative;
+	margin: 0 auto;
+	max-height: 100%;
+}
+
+.flex {
+	padding-top: 7px;
+	padding-bottom: 7px;
+	display: flex;
+}
+
+.text-top {
+	height: 66px;
+	align-items: center;
+	justify-content: center;
+	font-size: 22px;
+	margin-bottom: 7px;
+}
+
+.btn-play {
+	width: 144px;
+	height: 45px;
+	font-size: 24px;
+	line-height: 40px;
+	color: #000000;
+	text-align: center;
+	background-position: 0 -150px;
+	cursor: pointer;
+}
+
+.outer {
+	margin-bottom: 21px;
+	padding-left: 38px;
+}
+
+.field {
+	width: 366px;
+	height: 363px;
+	flex-shrink: 0;
+	position: relative;
+	background: url('../img/bg_play_field.png') no-repeat, url('../img/grid.png') repeat;
+	background-position: 0px 0px, -5px 25px;
+}
+
+.field-computer {
+	margin-left: 31px;
+}
+
+.service-row {
+	text-align: center;
+}
+
+.service-text {
+	color: #000000;
+	padding-top: 10px;
+}
+
+footer {
+    padding: 30px 30px 0 25px;
+    margin: 0 0 0 0;
+    height: 40px;
+    text-align: center;
+}
+
+.ships {
+	width: 330px;
+	height: 330px;
+	position: relative;
+	left: 29px;
+	top: 27px;
+}
+
+.ship {
+	height: 35px;
+	position: absolute;
+	background: url('../img/sprite.png') no-repeat;
+}
+
+
+.vertical {
+	transform: rotate(90deg);
+	transform-origin: 17.5px 17.5px;
+}
+
+.fourdeck {
+	width: 134px;
+	background-position: 0 0;
+}
+
+.tripledeck {
+	width: 101px;
+	background-position: -150px 0;
+}
+
+.doubledeck {
+	width: 68px;
+	background-position: -270px 0;
+}
+
+.singledeck {
+	width: 35px;
+	background-position: -360px 0;
+}
+
+.icon-field {
+	width: 33px;
+	height: 33px;
+	display: block;
+	position: absolute;
+	z-index: 5;
+	background: url('../img/sprite.png') no-repeat;
+}
+
+.dot {
+	background-position: 0px -50px;
+}
+
+.red-cross {
+	background-position: -140px -50px;
+}
+
+.shaded-cell {
+	background-position: -260px -50px;
+}
+
+.explosion {
+	background-position: -360px -50px;
+	z-index: 6;
+	opacity: 0;
+	transform: scale(.2);
+}
+
+@keyframes Explosion {
+	0% { opacity: 0; transform: scale(.2); }
+	50% { opacity: 1; transform: scale(1); }
+	100% { opacity: 0; }
+}
+
+.explosion.active {
+	animation-name: Explosion;
+	animation-duration: 0.4s;
+	transform: scale(1);
+}
+
+.instruction{
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+}
+
+input{
+	margin-bottom: 10px;
+}

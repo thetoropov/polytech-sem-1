@@ -3,10 +3,42 @@
 <head>
     <meta charset="utf-8">
     <link href="../static/proj/style/style.css" rel="stylesheet">
-    <title>Proj name</title>
+    <title>Sea Battle</title>
 </head>
 
 <body>
+    <div class="wrap">
+        <header>
+            <h1>Sea Battle</h1>
+        </header>
+        <div class="battlefield">
+            <div id="text_top" class="flex text-top" >Подготовка к бою</div>
+            <div id="instruction" class="instruction">
+                <h4>Добро пожаловать на морскую арену!</h4>
+                <p>Введите свое имя и нажмите на кнопку играть.</p>
+                <form>
+                    <input id="userName" type="text" name="userName">
+                </form>
+                <button id="play" type="button" class="btn-play">Играть</button>
+            </div>
+
+            <div class="flex outer">
+                <div class="field field-human" hidden>
+                    <div id="field_human" class="ships"></div>
+                </div>
+
+                <div class="field field-computer" hidden>
+                    <div id="field_computer" class="ships"></div>
+                </div>
+            </div>
+
+            <div class="service-row">
+                <div id="service_text" class="service-text"></div>
+                <div id="score_text" class="service-text"></div>
+            </div>
+
+        </div>
+    </div>
 
     <script src="../static/proj/script/script.js"></script>
 </body>
